@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
+
 <title> My Favorite Gunbound Mobiles </title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 <style>
 #mobiles {
 	background-color: coral;
@@ -11,12 +17,33 @@
 	padding: 20px;
 	text-align: left;
 }
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
+html{
+	scroll-behavior: smooth;
+}
+body {
+
+	margin: 0;
+	padding: 0;
+}
+section {
+	width: 100%;
+	height: 300vh;
+	background: url(bg.jpg) no-repeat;
+	background-size: cover;
+}
+.backtotop {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	background: #ff4757;
+	bottom: 40px;
+	right: 50px;
+	
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	font-size: 36;
+	color: pink;
 }
 .raon {
 	background-color: lightsalmon;
@@ -97,6 +124,10 @@ nav {
 	padding: 10px;
 }
 </style>
+</head>
+
+
+
 <body>
 <body style="background-color:lightskyblue;">
 
@@ -115,6 +146,10 @@ nav {
 <img src="raon.png" alt="Raon Launcher" style="width:100px">
 	<h2> Raon </h2>
 	<p> 9/10 </p>
+
+<a href="#" <i class="fa-solid fa-arrow-up"></i> </a>
+
+
 </div>
 <div class="mage">
 <img src="mage.png" alt="Raon Launcher" style="width:100px">
@@ -167,6 +202,6 @@ nav {
 	<p> 8/10 </p>
 </div>
 
-
+<a class="backtotop" href="#"> <i class="fa-solid fa-arrow-up"></i> </a>
 </body>
 </html>

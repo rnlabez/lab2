@@ -1,19 +1,21 @@
 body{
   margin: 0;
   padding: 0;
-  background: rgb(0,102,178);
-  background: linear-gradient(270deg, rgba(0,102,178,1) 0%, rgba(27,160,210,1) 100%);
+  background: rgb(63,94,251);
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(177,97,177,1) 100%);
   background-size: cover;
 }
 .box{
   width: 375px;
   background: rgba(26, 78, 58, 0.4);
   padding: 40px;
+  border-radius: 10%;
   text-align: center;
   margin: auto;
   margin-top: 5%;
   color: white;
-  font-family: 'Helvetica',sans-serif;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
 .box-img{
   border-radius: 50%;

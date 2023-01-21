@@ -5,12 +5,27 @@ body{
   background-size: cover;
 }
 .box{
-  width: 450px;
-  background: rgba(0, 0, 0, 0.4);
+  width: 375px;
+  background: rgba(45, 49, 47, 0.4);
   padding: 40px;
   text-align: center;
   margin: auto;
   margin-top: 5%;
   color: white;
   font-family: 'Helvetica',sans-serif;
+}
+.box-img{
+  border-radius: 50%;
+  width: 225px;
+  height: 225px;
+}
+.box h1{
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 10px;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  
 }

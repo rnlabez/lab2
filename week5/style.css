@@ -28,5 +28,22 @@ body{
 .box h5{
   font-size: 20px;
   letter-spacing: 3px;
-  
+  font-weight: 10px;
+}
+.box p{
+  text-align: justify;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: flex;
+  margin: 10px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
 }

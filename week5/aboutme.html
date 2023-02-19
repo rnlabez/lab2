@@ -42,3 +42,14 @@
     alert('Boo!');
     }
     </script>
+
+    <!-- Onclick event calls a function -->
+    <button onclick="displayDate()">Display time</button>
+
+    <script>
+    function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+
+    <p id="demo"></p>

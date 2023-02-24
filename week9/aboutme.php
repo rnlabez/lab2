@@ -10,10 +10,10 @@
 
   <body>
     <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="aboutme.html">About Me</a>
+  <a href="index.php">Home</a>
+  <a href="aboutme.php">About Me</a>
   <a href="#References">References</a>
-  <a href="#JS" class="split">WIP Button</a>
+  <a href="form_validation.php" class="split">WIP Button</a>
     </div>
 
    <!-- JavaScript String Length -->

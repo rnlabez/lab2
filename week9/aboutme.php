@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="aboutme.css">
+  <title> About Me </title>
+</head>
+
+  <body>
+    <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="#References">References</a>
+  <a href="#JS" class="split">WIP Button</a>
+    </div>
+
+   <!-- JavaScript String Length -->
+   <h2>JavaScript String Length</h2>
+
+   <p>The length property returns the length of a string:</p>
+   
+   <p id="demo"></p>
+
+    <script>
+        var txt = "I'm slow at learning JavaScript";
+        var len = txt.length;
+        document.getElementById("demo").innerHTML = len;
+        </script>
+    
+    <!-- Popup box line break-->
+    <button onclick="alert('Greetings!\nThis is a work in progress.')">Click me!</button>
+
+    <!-- Javascript Timing-->
+    <p>Another button! Go ahead and try me.</p>
+
+    <button onclick="setTimeout(myFunction, 5000);">Try it</button>
+
+    <script>
+    function myFunction() {
+    alert('Boo!');
+    }
+    </script>
+
+    <!-- Onclick event calls a function -->
+    <button onclick="displayDate()">Display time</button>
+
+    <script>
+    function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+
+    <p id="demo"></p>
+
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Change me!</button>
+
+    </body>
+    </html>

@@ -67,7 +67,7 @@ function test_input($data) {
 <h2>PHP Form Validation Example</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
+  Full Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
   E-mail: <input type="text" name="email" value="<?php echo $email;?>">
@@ -100,5 +100,42 @@ echo "<br>";
 echo $gender;
 ?>
 
-</body>
-</html>
+
+
+<?php
+//From mysql_insert.php
+// if statement below is for the MySQL insert code to execute only AFTER the submit button is pressed
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+
+	$servername = "192.168.150.213";
+	$username = "webprogmi212";
+	$password = "b3ntRhino98";
+	$dbname = "webprogmi212";
+	
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+	}
+	
+	$sql = "INSERT INTO rnlabez_myGuests (name, email, website, comment, gender)
+	VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+
+	if ($conn->query($sql) === TRUE) {
+	echo "New record created successfully";
+	} else {
+	echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+	
+	$conn->close();
+}	
+
+?>
+
+
+
+
+

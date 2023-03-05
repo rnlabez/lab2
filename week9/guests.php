@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM myguests";
+$sql = "SELECT * FROM rnlabez_myGuests";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
